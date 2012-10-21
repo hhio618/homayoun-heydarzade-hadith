@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pname">حدیث</string>
+    <string name="cat">بر اساس  موضوع</string>
+    <string name="aeme">بر اساس معصومین و بزرگان</string>
+    <string name="about">درباره سازنده</string>
+    <string name="search">جستجوی حدیث</string>
+    <string name="db">نسخه ی پایگاه داده</string>
+    <string name="strTitle" />
+    <string name="strId" />
+    <string name="widget_text">Hello Widget!</string>
+    <string name="app_name">Hello Widget</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="ButtonText">
+    <item name="android:textColor">#ffffff</item>
+     <item name="android:textStyle">normal</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+  <item name="android:textSize">15dp</item>
+
+</style>
+<style name="navBt">
+    <item name="android:textColor">#ffffff</item>
+     <item name="android:textStyle">normal</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+  <item name="android:textSize">10dp</item>
+<item name="android:singleLine">true</item>
+<item name="android:width">70dp</item>
+</style>
+</resources>

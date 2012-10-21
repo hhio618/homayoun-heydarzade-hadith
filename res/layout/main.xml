@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkgrnd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="گنجینه ی احادیث"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/ButtonText"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@xml/btselector"
+            android:singleLine="true"
+            android:text="@string/cat" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/ButtonText"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@xml/btselector"
+            android:singleLine="true"
+            android:text="@string/aeme" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/ButtonText"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@xml/btselector"
+            android:singleLine="true"
+            android:text="جستجو" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/ButtonText"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@xml/btselector"
+            android:singleLine="true"
+            android:text="تنظیمات" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/ButtonText"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@xml/btselector"
+            android:singleLine="true"
+            android:text="@string/about" />
+    </LinearLayout>
+
+</RelativeLayout>

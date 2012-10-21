@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <ListPreference     android:title="نمایش متون"
+                      android:summary="فونت های فارسی در برنامه ی دیگر مانند  اس ام اس  چگونه دیده می شود؟"
+                      android:key="FaMethod"
+                      android:defaultValue="2"
+                      android:entries="@array/listArray"
+                      android:entryValues="@array/listValues" />
+    <ListPreference     android:title="انتخاب قلم"
+                      android:summary="قلم مورد نظرتان را انتخاب کنید:"
+                      android:key="Font"
+                      android:defaultValue="none"
+                      android:entries="@array/listFont"
+                      android:entryValues="@array/listFontValues" />
+    
+</PreferenceScreen>

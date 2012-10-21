@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkgrnd2"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.69"
+        android:background="@drawable/customlayout" >
+
+        <TextView
+            android:id="@+id/txtAbout"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|top"
+            android:paddingBottom="10dp"
+            android:text="طراح و برنامه نویس :\n همایون حیدرزاده\n\nسرپرست گروه پایگاه داده : \n برزو بسطائی\n\nانجمن علمی کامپیوتر\nامور فرهنگی دانشگاه لرستان\n\nگنجینه ی احادیث نسخه ی\n[ver]\n\nنسخه پایگاه داده :\n[db]\n\nوب سایت :\nwww.netak.ir"
+            android:textSize="22dip" />
+
+    </ScrollView>
+
+</LinearLayout>

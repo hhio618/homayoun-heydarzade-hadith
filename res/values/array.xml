@@ -1,0 +1,29 @@
+<resources>
+<string-array name="listArray">
+    <item>فونت های فارسی  بریده بریده اند</item>
+    <item>فونت های فارسی درست نشان داده می شوند</item>
+</string-array>
+<string-array name="listValues">
+    <item>1</item>
+    <item>2</item>
+
+</string-array>
+<string-array name="listFont">
+    <item >قلم پیشفرض</item>
+    <item >Nabi</item>
+    <item >Neirizi</item>
+    <item >almahdi</item> 
+    <item >trado</item>  
+        <item>tradbdo</item> 
+        <item >Scheherazade</item> 
+</string-array>
+<string-array name="listFontValues">
+    <item >none</item>
+    <item >Nabi.ttf</item>
+    <item >Neirizi.ttf</item>
+    <item >almahdi.ttf</item> 
+    <item >trado.ttf</item>  
+        <item>tradbdo.ttf</item> 
+        <item >Scheherazade.ttf</item>
+</string-array>
+</resources>

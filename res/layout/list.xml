@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkgrnd2"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_bg"
+        android:gravity="left" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/navBt"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Button"
+            android:background="@xml/btselector"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/button15"
+            style="@style/navBt"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button1"
+            android:text="Button"
+            android:background="@xml/btselector"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/navBt"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button15"
+            android:text="Button"
+            android:background="@xml/btselector"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/navBt"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button2"
+            android:text="Button"
+            android:background="@xml/btselector"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/navBt"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button3"
+            android:text="Button"
+            android:background="@xml/btselector"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+    <LinearLayout         
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/gradient_bg"
+        android:layout_marginRight="16dp">
+        
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#70c656"
+
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector" />
+
+    </LinearLayout>
+    
+</LinearLayout>
