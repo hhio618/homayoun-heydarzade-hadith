@@ -18,16 +18,16 @@ import android.widget.Toast;
 public class HelloWidget extends AppWidgetProvider {
 
 	private Date currentTime;
-	
+
 	@Override
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
 		super.onUpdate(context, appWidgetManager, appWidgetIds);
 	}
-	
-  @Override
+
+	@Override
 	public void onReceive(Context context, Intent intent) {
-		
+
 		// v1.5 fix that doesn't call onDelete Action
 		final String action = intent.getAction();
 		if (AppWidgetManager.ACTION_APPWIDGET_DELETED.equals(action)) {
@@ -41,11 +41,11 @@ public class HelloWidget extends AppWidgetProvider {
 			super.onReceive(context, intent);
 		}
 	}
-	
+
 	@Override
 	public void onDeleted(Context context, int[] appWidgetIds) {
 		Toast.makeText(context, "onDelete", Toast.LENGTH_SHORT).show();
 		super.onDeleted(context, appWidgetIds);
 	}
-	
+
 }

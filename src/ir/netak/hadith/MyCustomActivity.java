@@ -9,62 +9,57 @@ import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MyCustomActivity extends Activity{
-	public String fonts=new String();
-	public String fa=new String();
-	public Typeface face,stock;
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-	// TODO Auto-generated method stub
-	super.onCreate(savedInstanceState);
-    SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-    fa = SP.getString("FaMethod", "1");
-    fonts = SP.getString("Font","none");
-    stock=face=Typeface.createFromAsset(getAssets(), "font/tradbdo.ttf");
-    if(fonts.compareTo("none")==0)
-    		{
-    	face=Typeface.DEFAULT;
-    		}
-    else
-    {
-		face=Typeface.createFromAsset(getAssets(), "font/"+fonts+"");
-    }
-}
-    public String farsi(String str)
-    {
-    	String tmp=new String();
-    	if(Integer.valueOf(fa)==1)
-    	{
-    		tmp=Farsi.Convert(str);
-    	}
-    	else if(Integer.valueOf(fa)==2)
-    	{
-    		tmp=str;
-    	}
-    	else if(Integer.valueOf(fa)==3)
-    	{
-    		tmp=PersianReshape.reshape(str);
-    	}
-    	return tmp;
-    }
+public class MyCustomActivity extends Activity {
+	public String fonts = new String();
+	public String fa = new String();
+	public Typeface face, stock;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		SharedPreferences SP = PreferenceManager
+				.getDefaultSharedPreferences(getBaseContext());
+		fa = SP.getString("FaMethod", "1");
+		fonts = SP.getString("Font", "none");
+		stock = face = Typeface
+				.createFromAsset(getAssets(), "font/tradbdo.ttf");
+		if (fonts.compareTo("none") == 0) {
+			face = Typeface.DEFAULT;
+		} else {
+			face = Typeface.createFromAsset(getAssets(), "font/" + fonts + "");
+		}
+	}
+
+	public String farsi(String str) {
+		String tmp = new String();
+		if (Integer.valueOf(fa) == 1) {
+			tmp = Farsi.Convert(str);
+		} else if (Integer.valueOf(fa) == 2) {
+			tmp = str;
+		} else if (Integer.valueOf(fa) == 3) {
+			tmp = PersianReshape.reshape(str);
+		}
+		return tmp;
+	}
+
 	/* Creates the menu items */
-    public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 0, 0, farsi("تنظیمات"));
+	public boolean onCreateOptionsMenu(Menu menu) {
+		menu.add(0, 0, 0, farsi("تنظیمات"));
 
+		return true;
+	}
 
-        return true;
-    }
- 
-    /* Handles item selections */
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-    	case 0:
-            Intent intent=new Intent(this,Setting.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-            return true;
-        }
-        return false;
-    }
+	/* Handles item selections */
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case 0:
+			Intent intent = new Intent(this, Setting.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+			return true;
+		}
+		return false;
+	}
 
 }
